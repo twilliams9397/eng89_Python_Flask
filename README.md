@@ -26,6 +26,30 @@ def login():
     return "<h1> Welcome to the login page.</h1>" \
            "<h2> Please enter your login details below:</h2>"
 ```
+- Error handing can be used to show a custom message/page when a page is unavailable
+- flask contains redirect and url_for for this
+```python
+@app.route("/login/")
+def login():
+    return redirect(url_for("welcome"))
+```
+- This uses a HTML file to redirect from Python flask to .html file
+- HTML file:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Engineering 89 DevOps</title>
+</head>
+<body>
+ <h1>The login page is unavailable.</h1>
+
+</body>
+</html>
+```
 ## HTML
 ## JavaScript
 ## Bootstrap
+- getbootstrap.com contains many sections of code to help with designing pages
+- e.g. navbar, login form
