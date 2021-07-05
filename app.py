@@ -29,6 +29,10 @@ def login():
            #"<h1> Welcome to the login page.</h1>" \
            #"<h2> Please enter your login details below:</h2>"
 
+@app.route("/about/")
+def about():
+    return render_template("About.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
 
