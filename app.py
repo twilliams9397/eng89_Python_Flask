@@ -25,7 +25,7 @@ def welcome():
 
 @app.route("/login/")
 def login():
-    return redirect(url_for("welcome"))
+    return redirect(url_for("welcome")) # redirects to welcome page
            #"<h1> Welcome to the login page.</h1>" \
            #"<h2> Please enter your login details below:</h2>"
 
