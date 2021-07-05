@@ -34,6 +34,7 @@ def login():
     return redirect(url_for("welcome"))
 ```
 - This uses a HTML file to redirect from Python flask to .html file
+## HTML
 - HTML file:
 ```html
 <!DOCTYPE html>
@@ -48,7 +49,6 @@ def login():
 </body>
 </html>
 ```
-## HTML
 ## JavaScript
 ## Bootstrap
 - getbootstrap.com contains many sections of code to help with designing pages
